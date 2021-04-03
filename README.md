@@ -27,7 +27,7 @@ const clone = require('git-clone-repos');
 
 Type: `array`
 
-Array of git locations
+Array of git repository URLs. can be HTTPS `https://github.com/alex-page/alexpage.com.au.git` or SSH `git@github.com:alex-page/alexpage.com.au.git`.
 
 **destination**
 
