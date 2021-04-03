@@ -1,0 +1,28 @@
+{
+	"name": "git-clone-repos",
+	"version": "0.0.0",
+	"description": "Clone multiple git repositories via shell command",
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"main": "index.js",
+	"files": [
+		"index.js"
+	],
+	"author": {
+		"name": "Alex Page",
+		"email": "alex@alexpage.com.au",
+		"url": "http://alexpage.com.au"
+	},
+	"keywords": [
+		"git",
+		"clone",
+		"shell",
+		"repositories"
+	],
+	"license": "MIT",
+	"devDependencies": {
+		"ava": "^3.15.0",
+		"xo": "^0.38.2"
+	}
+}
