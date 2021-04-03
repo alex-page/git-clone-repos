@@ -1,7 +1,6 @@
 const test = require('ava');
-
-const clone = require('./index');
 const fs = require('fs/promises');
+const clone = require('./dist/index.js');
 
 const dest = './.repo/';
 

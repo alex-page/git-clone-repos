@@ -1,14 +1,21 @@
 {
 	"name": "git-clone-repos",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "Clone multiple git repositories via shell command",
+	"main": "dist/index.js",
+	"files": [
+		"dist/"
+	],
+	"license": "MIT",
 	"scripts": {
+		"build": "microbundle --target node",
 		"test": "xo && ava"
 	},
-	"main": "index.js",
-	"files": [
-		"index.js"
-	],
+	"devDependencies": {
+		"ava": "^3.15.0",
+		"microbundle": "^0.13.0",
+		"xo": "^0.38.2"
+	},
 	"author": {
 		"name": "Alex Page",
 		"email": "alex@alexpage.com.au",
@@ -19,10 +26,5 @@
 		"clone",
 		"shell",
 		"repositories"
-	],
-	"license": "MIT",
-	"devDependencies": {
-		"ava": "^3.15.0",
-		"xo": "^0.38.2"
-	}
+	]
 }
