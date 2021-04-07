@@ -14,14 +14,21 @@ npm i git-clone-repos
 const clone = require('git-clone-repos');
 
 (async() => {
-  await clone([
-    'git@github.com:alex-page/alexpage.com.au.git',
-    'git@github.com:alex-page/harmonograph.art.git',
-  ], './.repo/');
+  const options = {
+    repos: [
+      'git@github.com:alex-page/alexpage.com.au.git',
+      'git@github.com:alex-page/harmonograph.art.git',
+    ],
+    destination: './.repo/'
+  };
+
+  await clone(options);
 });
 ```
 
-## API `clone(repos, destination)`
+## API
+
+### `clone({repos, destination, depth?, isTreeless?})`
 
 **repos**
 
@@ -34,6 +41,18 @@ Array of git repository URLs. can be HTTPS `https://github.com/alex-page/alexpag
 Type: `string`
 
 Set the destination for the cloned repositories.
+
+**depth**
+
+Type: `number`
+
+The depth to clone the repository.
+
+**isTreeless**
+
+Type: `Boolean`
+
+If the cloned repository is treeless `--filter=tree:0`.
 
 ## Related
 
