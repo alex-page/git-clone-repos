@@ -1,6 +1,6 @@
 {
 	"name": "git-clone-repos",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "Clone multiple git repositories via shell command",
 	"main": "dist/index.js",
 	"files": [

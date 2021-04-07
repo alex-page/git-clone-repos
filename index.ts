@@ -17,7 +17,7 @@ const clone = async ({
 }: Options) => {
 	try {
 		await fs.mkdir(destination, {recursive: true});
-		const treeless = isTreeless ? '--filter=tree:0 1' : '';
+		const treeless = isTreeless ? '--filter=tree:0' : '';
 		const cloneRepos = repos.map(async repo =>
 			promisify(exec)(`git clone --depth=${depth} ${treeless} ${repo}`, {cwd: destination})
 		);
