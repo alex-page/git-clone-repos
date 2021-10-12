@@ -11,19 +11,19 @@ npm i git-clone-repos
 ## Usage
 
 ```js
-const clone = require('git-clone-repos');
+const clone = require("git-clone-repos");
 
-(async() => {
-  const options = {
-    repos: [
-      'git@github.com:alex-page/alexpage.com.au.git',
-      'git@github.com:alex-page/harmonograph.art.git',
-    ],
-    destination: './.repo/'
-  };
+async () => {
+	const options = {
+		repos: [
+			"git@github.com:alex-page/alexpage.dev.git",
+			"git@github.com:alex-page/harmonograph.art.git",
+		],
+		destination: "./.repo/",
+	};
 
-  await clone(options);
-});
+	await clone(options);
+};
 ```
 
 ## API
@@ -34,7 +34,7 @@ const clone = require('git-clone-repos');
 
 Type: `array`
 
-Array of git repository URLs. can be HTTPS `https://github.com/alex-page/alexpage.com.au.git` or SSH `git@github.com:alex-page/alexpage.com.au.git`.
+Array of git repository URLs. can be HTTPS `https://github.com/alex-page/alexpage.dev.git` or SSH `git@github.com:alex-page/alexpage.dev.git`.
 
 **destination**
 
